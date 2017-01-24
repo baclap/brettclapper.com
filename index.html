@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BrettClapper.com</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                color: #222;
+                font-size: 14px;
+                background: #fff;
+            }
+
+            h1 {
+                font-size: 21px;
+                font-weight: normal;
+                margin: 14px;
+            }
+
+            a {
+                color: #222;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100px;
+            }
+
+            li {
+                margin: 14px 0;
+                padding: 0;
+            }
+
+            .sprite {
+                width: 42px;
+                height: 63px;
+                background: url('sprite.png') 0px 0px;
+                background-size: 126px 63px;
+            }
+
+            @keyframes walk {
+                0% {background-position: 0px 0px;}
+                100% {background-position: -84px 0px;}
+            }
+
+            .sprite:hover {
+                animation-name: walk;
+                animation-duration: .6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(2);
+            }
+
+            .sprite:active {
+                animation-name: none;
+                background-position: 42px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sprite"></div>
+        <h1>Brett Clapper</h1>
+        <ul>
+            <li><a href="https://github.com/baclap">GitHub</a></li>
+            <li><a href="https://twitter.com/baclap">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/brett-clapper-17aa5943">LinkedIn</a></li>
+        </ul>
+    </body>
+</html>
